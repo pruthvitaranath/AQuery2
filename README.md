@@ -11,7 +11,7 @@
    - git checkout tags/0.4.8a -b adb_hw
    - python3 -m venv venc (create a virtual env)
    - source venc/bin/activate (activate the virtual env)
-   - export CXX=clang++-14
+   - export CXX=clang++-14 / export CXX=clang++
    - brew install monetdb
    - python3 pip install -r requirements.txt
    - docker run -d sunyinqi0508/aquery
