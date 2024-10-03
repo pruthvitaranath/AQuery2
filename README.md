@@ -32,6 +32,7 @@ You can try installing it on your CIMS server as well. However, newly created ac
  8. chmod u+x cims.sh
  9. nano cims.sh (change export CXX=g++-11.2 to export CXX=g++) and save it
  10. .  ./cims.sh (to run the script)
- 11. python3 pip install -r requirements.txt
- 12. python3 ./prompt.py
+ 11. Go to AQuery repo and run the below commands
+ 12. python3 pip install -r requirements.txt
+ 13. python3 ./prompt.py
     
