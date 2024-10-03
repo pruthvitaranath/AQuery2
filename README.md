@@ -20,7 +20,7 @@
 
 
 You can try installing it on your CIMS server as well. However, newly created accounts might not have access to older GCC modules (11.2), which could cause an issue while running the CIMS patch (step 2).
-## CIMS Computer Lab (Only for NYU affiliates who have access)
+## CIMS Computer Lab (Additional step from 2023 guidelines, don't forget step 9)
  1. git clone https://github.com/sunyinqi0508/AQuery2
  2.  cd AQuery2
  3.  git checkout tags/0.4.8a -b adb_hw
