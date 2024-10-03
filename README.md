@@ -21,7 +21,17 @@
 
 You can try installing it on your CIMS server as well. However, newly created accounts might not have access to older GCC modules (11.2), which could cause an issue while running the CIMS patch (step 2).
 ## CIMS Computer Lab (Only for NYU affiliates who have access)
-  1. Clone this git repo in CIMS.
-  2. Download the [patch](https://drive.google.com/file/d/1YkykhM6u0acZ-btQb4EUn4jAEXPT81cN/view?usp=sharing) 
-  3. Decompress the patch to any directory and execute script inside by typing (`source ./cims.sh`). Please use the source command or `. ./cims.sh` (dot space) to execute the script because it contains configurations for environment variables. Also note that this script can only work with bash and compatible shells (e.g. dash, zsh. but not csh)
-  4. Execute `python3 ./prompt.py`
+ 1. git clone https://github.com/sunyinqi0508/AQuery2
+ 2.  cd AQuery2
+ 3.  git checkout tags/0.4.8a -b adb_hw
+ 4.  If installing on CIMS (recommended), you also need to download this(https://drive.google.com/file/d/1YkykhM6u0acZ-btQb4EUn4jAEXPT81cN/view) patch and upload it to your server using the below command:
+    scp ./centos.zip <netid>@access.cims.nyu.edu:/home/<netid>/
+ 5. Login to CIMS
+ 6. Unzip centos.zip
+ 7. cd centos
+ 8. chmod u+x cims.sh
+ 9. nano cims.sh (change export CXX=g++-11.2 to export CXX=g++) and save it
+ 10. .  ./cims.sh (to run the script)
+ 11. python3 pip install -r requirements.txt
+ 12. python3 ./prompt.py
+    
